@@ -7,10 +7,6 @@ entity "Processo" as SI
 control "Banco de dado" as BD
  
 Advogada -> IU : Entra com Login e senha
-IU -> SI : Envia dados para verificação no login
-SI -> BD : Verifica dados informado
-BD -->SI : Retorna verificação dos dados
-SI --> IU : Status  de login
 IU -> SI : Alterar Status do processo
 SI -> BD : Salva  alteração realizada
 BD -->SI : Alteração salva

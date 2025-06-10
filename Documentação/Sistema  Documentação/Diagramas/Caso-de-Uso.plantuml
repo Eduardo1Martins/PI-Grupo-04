@@ -6,12 +6,12 @@ actor "Advogada" as Advogada
  
 rectangle " Sistema Themis"{
     usecase "Agendamento de consulta" as UC1
-    usecase "Cadastro Usuario" as UC2
-    usecase "Login Usuario" as UC3
+    usecase "Login Usuario" as UC2
+    usecase "Cadastrar Cliente" as UC3
     usecase "Notificação Status" as UC4
-    usecase "Status de Processo" as UC5 
+    usecase "Status de Processo" as UC5
     usecase "Consulta Posição Financeira" as UC6
-    usecase "Notificação Vencimento" as UC7
+    
    
     
        
@@ -20,12 +20,11 @@ rectangle " Sistema Themis"{
 
 Advogada --> UC1
 Advogada --> UC2
-Advogada --> UC3
+Advogada --> UC4
 Advogada --> UC5
 Advogada --> UC6
-Advogada --> UC7
 
-UC5 --> UC4:<<extend>>
-
+UC5 --> UC4:<<include>>
+UC2 --> UC3:<<include>>
  
 @enduml

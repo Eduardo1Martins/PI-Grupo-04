@@ -7,12 +7,11 @@ actor "Cliente" as Cliente
  
 rectangle " Sistama Themis"{
     
-    usecase "Cadastro e Login Usuario" as UC1
-    usecase "Status de Processo" as UC2
+    usecase "Login Usuario" as UC1
+    usecase "Vizualizar Status do Processo" as UC2
     usecase "Consulta de Posição Financeira" as UC3
-    usecase "Notificação Vencimento" as UC4
-
-       
+    usecase "Vizualizar Documentos" as UC4 
+     
 }
 Cliente --> UC1
 Cliente --> UC2
