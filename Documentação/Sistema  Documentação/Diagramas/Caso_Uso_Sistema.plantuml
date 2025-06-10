@@ -1,0 +1,20 @@
+@startuml
+
+left to right direction
+ 
+actor "Sistema" as Sistema
+
+ 
+rectangle " Sistama Themis"{
+    
+    usecase "Notificação Vencimento" as UC1
+    usecase "Notificação Status Processo" as UC2
+   
+     
+}
+ Sistema --> UC1
+ Sistema --> UC2
+
+
+ 
+@enduml
