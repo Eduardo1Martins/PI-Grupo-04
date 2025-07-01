@@ -1,7 +1,7 @@
 @startuml
  
 class Advogada {
-    //Atributos da classe cliente
+    //Atributos da classe Advogada
     -cpf:varchar
     -nomeCompleto:varchar
     -dataNascimento:date
@@ -15,7 +15,7 @@ class Advogada {
     -cidade:varchar
     -estado:varchar
     //metodo da classe Advogada
-    -cadastroLoginUsuario()
+    -LoginUsuario()
     -agendarConsulta()
     -inserirCliente()
     -alterarCliente()
@@ -23,17 +23,17 @@ class Advogada {
     -deletarCliente()
     -definirStatusProcesso()
     -notificaçãoStatus()
-    -statusProcesso
     -alterarStatusProcesso
     -contratoHOnorario()
     -pagamentoTipoProcesso()
     -consultadePosiçãoFinanceira()
-    -notificaçãodeVencimento()
+    
 }
  
 class  Processo {
     //Atributos da classe Processo
     -id:varchar
+    -numero processo
     -idCliente:varchar
     -dataAbertura:date
     -dataConclusão:date
@@ -43,7 +43,7 @@ class  Processo {
     -contratoHOnorario()
     -alterar_StatusdoProcesso()
     -definir_StatusdoProcesso()
-    -notificarCliente()
+    
    
 }
 
@@ -70,10 +70,10 @@ class Cliente {
     -inscriçãoEstadual:varchar
     -nomeResponsável:varchar
     //metodo da classe Cliente
-    -cadastro_LoginUsuario()
+    -LoginUsuario()
     -statusdeProcesso()
     -consultadePosiçãoFinanceira()
-    -notificaçãodeVencimento()
+   
 }
  
 @endum
