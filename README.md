@@ -8,27 +8,119 @@ Karina Santos;
 Marcos Zambom
 
 # Projeto AdvoTech
-Estamos  desenvolvendo  um sistema para um cliente onde  deve  ter  função de organização do cotidiano  e  pratico para o dia  a dia 
+Projeto desenvolvido pelos alunos do 2º semestre de DSM da Fatec Araras – Grupo Lumos, no âmbito do Projeto Integrador 2025.
 
-# Indice
-1. Sobre o projeto
-2. Instalação
-3. Contato
+🏛️ Themis - Sistema Jurídico Personalizado
 
-# 1. Sobre o Projeto
-Estamos desenvolvendo um sistema personalizado para um cliente, com o objetivo de facilitar a organização e otimizar as tarefas do cotidiano. A proposta principal do sistema é fornecer uma solução prática e eficiente para o dia a dia, permitindo ao usuário gerenciar melhor seu tempo, suas atividades e suas responsabilidades.
+📌 Sobre o Projeto
+O Themis é um sistema web voltado para escritórios de advocacia de pequeno porte, com foco em facilitar a comunicação com os clientes e otimizar a rotina do(a) advogado(a). Permite agendamento de consultas, visualização do status dos processos e controle financeiro.
 
-Esse sistema será projetado para ser intuitivo e de fácil utilização, com funcionalidades que atendem às necessidades diárias do cliente, como gerenciamento de compromissos, controle de tarefas, lembretes, além de outras ferramentas que contribuam para aumentar a produtividade e a organização.
+Este sistema foi desenvolvido especialmente para o escritório da Dra. Francielli Palma Maciel.
 
-# 2. Próximas Versões
+# Próximas Versões
 Linkar o google agendas com o sistema.
 
-# 3. Intalação GitClone
-Clone Repositorio 
+🎯 Objetivos
+Automatizar tarefas jurídicas do dia a dia.
 
-git clone : https://github.com/Eduardo1Martins/PI-Grupo-04.git
+Fornecer aos clientes acesso direto a informações sobre seus processos.
 
-# 4. Contato
-Email:
+Melhorar o controle de agenda e finanças do escritório.
+
+Facilitar a organização e compartilhamento de documentos jurídicos.
+
+🧠 Funcionalidades
+Agendamento de consultas
+
+Cadastro e login de usuários
+
+Consulta do status dos processos
+
+Visualização de pendências financeiras
+
+
+🧰 Tecnologias Utilizadas
+Back-end: PHP
+
+Banco de Dados: MariaDB / MySQL
+
+Front-end: HTML, CSS, Bootstrap
+
+Modelagem: BR Modelo, PlantUML
+
+Organização: Trello (Kanban)
+
+Testes: Apache JMeter
+
+# Ferramentas:
+Trello
+Visual Studio Code versão 8.2.12
+Plant UML versão 2.18.1
+Br Modelo versão 3.2
+Heidi 12.6.0.6765
+
+📂 Estrutura do Repositório
+pgsql
+Copiar
+Editar
+📦 PI-Grupo-04/
+├── Banco de dados/
+│   └── Themis.sql
+├── Documentação/
+│   └── Relatório completo (PDF/DOCX)
+├── prototipos/
+├── src/
+│   ├── index.php
+│   ├── login/
+│   ├── agendamento/
+│   └── processos/
+├── README.md
+📊 Comparativo com Sistemas de Mercado
+Funcionalidade	Mais Jurídico	ProJúris	Themis
+Agendamento de consulta	✅	✅	✅
+Cadastro & Login Usuário	✅	✅	✅
+Status do Processo	✅	✅	✅
+Consulta Financeira	✅	✅	✅
+Geração de Relatórios	✅	❌	❌
+Notificações (WhatsApp)	✅	❌	✅
+
+📅 Metodologia
+Utilizou-se a metodologia Kanban, por meio da ferramenta Trello, para acompanhar o desenvolvimento e organização das tarefas em sprints.
+
+📈 Resultados dos Testes
+Foram aplicados testes de:
+
+Caixa Preta
+
+Aceitação com a advogada cliente
+
+Resultado geral: O sistema atendeu aos requisitos funcionais e não funcionais com sucesso, obtendo alta taxa de satisfação por parte da cliente.
+
+⚙️ Requisitos Mínimos
+Software:
+Navegador moderno (Chrome, Firefox, Edge)
+
+MySQL 8.x ou superior
+
+Servidor local (ex: XAMPP)
+
+Hardware:
+CPU: Intel i3 ou superior
+
+RAM: 4 GB (8 GB recomendado)
+
+SSD: 128 GB (mínimo)
+
+Resolução: 1280x768 px
+
+👥 Integrantes do Grupo Lumos
+Nome |	Responsabilidades
+Eduardo Martins |	PHP, GitHub
+Fernanda Palma	| HTML, Banco de Dados, Prototipação, Apresentação e Documentação
+Karina Santos	  | Documentação
+Marcos Zambom	  | Testes e Qualidade
+
+📎 Links Importantes
+🔗 Repositório GitHub: https://github.com/Eduardo1Martins/PI-Grupo-04
 
 
