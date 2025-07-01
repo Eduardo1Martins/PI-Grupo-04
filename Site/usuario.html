@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Usuários Cadastrados</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .text-gold { color: #FFD700; }
+    .bg-black-gold { background-color: #000; }
+    .table thead { background-color: #222; color: #FFD700; }
+    .btn-warning, .btn-danger { color: #000; }
+  </style>
+</head>
+<body class="bg-black-gold text-white">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/Logo.png" alt="Logo" class="me-2" style="height: 40px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Área do Cliente</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Área Advogado</a></li>
+          <li class="nav-item"><a class="nav-link" href="agendamento.html">Agendamento</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Tabela de Usuários -->
+  <div class="container my-5">
+    <h2 class="text-center text-gold mb-4">Usuários Cadastrados</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered table-dark table-hover text-center align-middle">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>CPF</th>
+            <th>Email</th>
+            <th>Endereço</th>
+            <th>Estado Civil</th>
+            <th>Data de Cadastro</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Exemplo de usuário -->
+          <tr>
+            <td>1</td>
+            <td>João Silva</td>
+            <td>(11) 91234-5678</td>
+            <td>123.456.789-00</td>
+            <td>joao@email.com</td>
+            <td>Rua das Flores, 123</td>
+            <td>Solteiro</td>
+            <td>2025-06-12</td>
+            <td>
+              <button class="btn btn-warning btn-sm">Alterar</button>
+              <button class="btn btn-danger btn-sm">Excluir</button>
+            </td>
+          </tr>
+          <!-- Adicione mais linhas dinamicamente via PHP/MySQL -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="text-center py-3 border-top border-gold bg-black-gold">
+    <p class="mb-0 text-white">© 2025 Escritório de Advocacia. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
