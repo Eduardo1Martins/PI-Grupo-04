@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<style>
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+    .bg-black-gold {
+        background-color: #000;
+    }
+    .text-gold {
+        color: #FFD700;
+    }
+    .border-gold {
+        border-color: #FFD700;
+    }
+    .hover\:bg-gold-700:hover {
+        background-color: #b8860b;
+    }
+    .focus\:ring-gold-500:focus {
+        box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.5);
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escritório de Advocacia</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.png" alt="Logo" width="40" height="40"> Escritório de Advocacia
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="jumbotron jumbotron-fluid text-center text-white" style="background-color: #343a40; padding: 100px 0;">
+        <div class="container">
+            <h1 class="display-4">Bem-vindo ao Escritório de Advocacia Dra Francielli Palma Maciel</h1>
+            <p class="lead">Seu parceiro na busca pela justiça e direitos.</p>
+        </div>
+    </header>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Sobre Nós</h2>
+                    <p>Nosso escritório oferece serviços especializados com ética e compromisso, focando na
+                        defesa dos direitos dos nossos clientes. Com experiência em diversas áreas do direito, nossa
+                        equipe busca sempre a melhor solução para cada caso.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/images/office.jpg" alt="Escritório" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="servicos" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Nossos Serviços</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/images/lawyer1.jpg" class="card-img-top" alt="Serviço 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Consultoria Jurídica</h5>
+                            <p class="card-text">Aconselhamento jurídico para pessoas físicas e jurídicas em diversas áreas do direito.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/images/lawyer2.jpg" class="card-img-top" alt="Serviço 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Direito Civil e Processo Civil</h5>
+                            <p class="card-text">Defesa e representação em processos judiciais e administrativos de diversos ramos do direito.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets/images/lawyer2.jpg" class="card-img-top" alt="Serviço 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Direito Imobiliário</h5>
+                                <p class="card-text">Defesa e representação em processos judiciais e administrativos de diversos ramos do direito.</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/images/lawyer2.jpg" class="card-img-top" alt="Serviço 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Trabalhista</h5>
+                            <p class="card-text">Defesa e representação em processos judiciais e administrativos de diversos ramos do direito.</p>
+                        </div>
+                    </div>
+            </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/images/lawyer2.jpg" class="card-img-top" alt="Serviço 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Direito do Consumidor</h5>
+                            <p class="card-text">Defesa e representação em processos judiciais e administrativos de diversos ramos do direito.</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/images/lawyer2.jpg" class="card-img-top" alt="Serviço 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Direito da Família</h5>
+                        <p class="card-text">Defesa e representação em processos judiciais e administrativos de diversos ramos do direito.</p>
+                    </div>
+                </div>
+        </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/images/lawyer3.jpg" class="card-img-top" alt="Serviço 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Direito Previdenciário</h5>
+                            <p class="card-text">Resolução de conflitos de forma alternativa, evitando a judicialização e economizando tempo e recursos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="servicos" class="py-16 px-6 bg-gray-900">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-gold mb-8 text-center">Nossos Serviços</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-black rounded-lg shadow-md p-6 border border-gold">
+                    <h3 class="text-xl font-semibold text-gold mb-2">Direito Empresarial</h3>
+                    <p class="text-lg">Assessoria em contratos, fusões e aquisições, propriedade intelectual e direito societário.</p>
+                </div>
+                <div class="bg-black rounded-lg shadow-md p-6 border border-gold">
+                    <h3 class="text-xl font-semibold text-gold mb-2">Direito Civil</h3>
+                    <p class="text-lg">Atuação em questões de família, sucessões, contratos e responsabilidade civil.</p>
+                </div>
+                <div class="bg-black rounded-lg shadow-md p-6 border border-gold">
+                    <h3 class="text-xl font-semibold text-gold mb-2">Direito Tributário</h3>
+                    <p class="text-lg">Planejamento tributário, defesa em processos administrativos e judiciais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipe" class="py-16 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-gold mb-8 text-center">Nossa Equipe</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-900 rounded-lg shadow-md p-4">
+                    <img src="https://placehold.co/300x300/000000/FFFFFF/png?text=Advogado+1&font=Montserrat" alt="Advogado 1" class="rounded-full mx-auto mb-4 border-4 border-gold">
+                    <h3 class="text-xl font-semibold text-gold text-center mb-2">Dr. João Silva</h3>
+                    <p class="text-lg text-center">Sócio Fundador</p>
+                </div>
+                <div class="bg-gray-900 rounded-lg shadow-md p-4">
+                    <img src="https://placehold.co/300x300/000000/FFFFFF/png?text=Advogada+2&font=Montserrat" alt="Advogada 2" class="rounded-full mx-auto mb-4 border-4 border-gold">
+                    <h3 class="text-xl font-semibold text-gold text-center mb-2">Dra. Maria Oliveira</h3>
+                    <p class="text-lg text-center">Sócia</p>
+                </div>
+                <div class="bg-gray-900 rounded-lg shadow-md p-4">
+                    <img src="https://placehold.co/300x300/000000/FFFFFF/png?text=Advogado+3&font=Montserrat" alt="Advogado 3" class="rounded-full mx-auto mb-4 border-4 border-gold">
+                    <h3 class="text-xl font-semibold text-gold text-center mb-2">Dr. Pedro Santos</h3>
+                    <p class="text-lg text-center">Associado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Seção Contato -->
+    <section id="contato" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Contato</h2>
+            <p class="text-center">Entre em contato conosco para agendar uma consulta ou esclarecer dúvidas.</p>
+            <form>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label for="mensagem" class="form-label">Mensagem</label>
+                        <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Escritório de Advocacia. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

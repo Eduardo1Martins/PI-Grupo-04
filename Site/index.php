@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once ('PHP\processos.php');
+require_once ('../PHP/processos.php');
 
 $tiposPermitidos = ['Administrador', 'Advogado'];
 
@@ -55,7 +55,7 @@ $tiposPermitidos = ['Administrador', 'Advogado'];
           <li class="nav-item"><a href="sobre.html" class="nav-link text-white hover:text-gold">Sobre</a></li>
           <li class="nav-item"><a href="cliente.php" class="nav-link text-white hover:text-gold">Área do Cliente</a></li>
           <li class="nav-item"><a href="financeiro.php" class="nav-link text-white hover:text-gold">Financeiro</a></li> 
-          <li class="nav-item"><a href="PHP\logout.php" class="nav-link text-white hover:text-gold">Sair</a></li>   
+          <li class="nav-item"><a href="../PHP/logout.php" class="nav-link text-white hover:text-gold">Sair</a></li>   
 
           <?php elseif (in_array($usuario['tipo'], ['Administrador', 'Advogado'])) : ?>
           <li class="nav-item"><a href="#sobre" class="nav-link text-white hover:text-gold">Início</a></li>
@@ -65,7 +65,7 @@ $tiposPermitidos = ['Administrador', 'Advogado'];
           <li class="nav-item"><a href="cadastro.php" class="nav-link text-white hover:text-gold">Cadastro</a></li>
           <li class="nav-item"><a href="financeiro.php" class="nav-link text-white hover:text-gold">Financeiro</a></li>
           <li class="nav-item"><a href="usuario.php" class="nav-link text-white hover:text-gold">Usuários</a></li> 
-          <li class="nav-item"><a href="PHP\logout.php" class="nav-link text-white hover:text-gold">Sair</a></li>
+          <li class="nav-item"><a href="../PHP/logout.php" class="nav-link text-white hover:text-gold">Sair</a></li>
           <?php endif ; ?>
 
         </ul>

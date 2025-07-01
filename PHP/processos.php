@@ -1,6 +1,6 @@
 <?php
-require_once __DIR__ . '\classes\Processo.php';
-require_once __DIR__ . '\classes\FaseProcesso.php';
+require_once __DIR__ . '/classes/Processo.php';
+require_once __DIR__ . '/classes/FaseProcesso.php';
 
 $usuario = $_SESSION['usuario'] ?? null;
 $processoObj = new Processo();

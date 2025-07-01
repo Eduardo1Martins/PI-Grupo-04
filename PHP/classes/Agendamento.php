@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-require_once __DIR__ . '\DB.php';
+require_once __DIR__ . '/DB.php';
 
 class Agendamento extends Database {
     private string $tabela = 'agendamentos';
@@ -25,7 +25,7 @@ class Agendamento extends Database {
         margin: 40px auto;
         max-width: 600px;
     '> Cliente não encontrado. Redirecionando...";
-    header("Refresh: 1.5; url=/PI-Grupo-04/Site/agendamento.php");
+    header("Refresh: 1.5; url=../Site/agendamento.php");
     exit();
 }
 

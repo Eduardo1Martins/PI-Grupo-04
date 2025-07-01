@@ -4,6 +4,6 @@ session_start();
 
 session_destroy();
 
-header("Location: Site\index.php");
+header("Location: ../Site/index.php");
 
 exit();

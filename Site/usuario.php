@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . 'PHP\usuarios.php';
+require_once '../PHP/usuarios.php';
 
 session_start();
 
@@ -52,7 +52,7 @@ if (!in_array($_SESSION['usuario']['tipo'], $tiposPermitidos)) {
           <li class="nav-item"><a class="nav-link" href="cadastro.php">Cadastro</a></li>
           <li class="nav-item"><a class="nav-link" href="agendamento.php">Agendamento</a></li>
           <li class="nav-item"><a class="nav-link" href="financeiro.php">Financeiro</a></li>
-          <li class="nav-item"><a class="nav-link" href="PHP\logout.php">Sair</a></li>
+          <li class="nav-item"><a class="nav-link" href="../PHP/logout.php">Sair</a></li>
         </ul>
       </div>
     </div>

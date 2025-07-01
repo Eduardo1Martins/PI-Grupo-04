@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once __DIR__ . 'PHP\classes\Login.php';
+require_once __DIR__ . '/classes/Login.php';
 
 $usuario = $_POST['username'];
 $senha = $_POST['password'];
@@ -17,9 +17,9 @@ if ($dados) {
     ];
 
     if ($dados['tipo'] === 'Cliente') {
-        header("Location: Site\cliente.php");
+        header("Location: ../Site/cliente.php");
     } elseif ($dados['tipo'] === 'Advogado' || $dados['tipo'] === 'Administrador') {
-        header("Location: Site\usuario.php");
+        header("Location: ../Site/usuario.php");
     }
     exit();
 } else {

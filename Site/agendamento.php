@@ -132,7 +132,7 @@ if (!in_array($_SESSION['usuario']['tipo'], $tiposPermitidos)) {
           <li><a href="financeiro.php" class="hover:text-gold transition duration-300">Financeiro</a></li>
           <li><a href="usuario.php" class="hover:text-gold transition duration-300">Usuários</a></li>
           <li><a href="cadastro.php" class="hover:text-gold transition duration-300">Cadastro</a></li>
-          <li><a href="PHP\logout.php" class="hover:text-gold transition duration-300">Sair</a></li>
+          <li><a href="../PHP/logout.php" class="hover:text-gold transition duration-300">Sair</a></li>
         </ul>
       </nav>
       <button id="menu-button" class="md:hidden text-gold focus:outline-none" aria-label="Menu">
@@ -147,7 +147,7 @@ if (!in_array($_SESSION['usuario']['tipo'], $tiposPermitidos)) {
   <div class="login-container">
     <div class="login-box">
       <h2>Agendamento de Clientes</h2>
-      <form action="/PI-Grupo-04/PHP/agendamento.php" method="POST">
+      <form action="../PHP/agendamento.php" method="POST">
         <div class="textbox">
           <input type="text" name="nome" placeholder="Nome do Cliente" required>
         </div>

@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '\classes\Financeiro.php';
+require_once __DIR__ . '/classes/Financeiro.php';
 
 $usuario = $_SESSION['usuario'];
 $tipoUsuario = $usuario['tipo'];

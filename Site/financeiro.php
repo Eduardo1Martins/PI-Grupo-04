@@ -2,8 +2,8 @@
 
 session_start();
 
-require_once  __DIR__ .('PHP\financeiro.php');
-require_once __DIR__ . ('PHP\processos.php');
+require_once ('../PHP/financeiro.php');
+require_once ('../PHP/processos.php');
 
 if (!isset($_SESSION['usuario'])) {
   header("Location: index.html");
@@ -74,7 +74,7 @@ $tiposPermitidos = ['Administrador', 'Advogado'];
           <li class="nav-item"><a class="nav-link" href="agendamento.php">Agendamento</a></li>
           <li class="nav-item"><a class="nav-link" href="cadastro.php">Cadastro</a></li>
           <?php endif; ?>
-          <li class="nav-item"><a class="nav-link" href="PHP\logout.php">Sair</a></li>
+          <li class="nav-item"><a class="nav-link" href="../PHP/logout.php">Sair</a></li>
           
         </ul>
       </div>

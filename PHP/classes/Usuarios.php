@@ -13,36 +13,38 @@ class Usuarios extends Database {
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function excluirUsuario($id, $confirmar = false)
-{
+    
+public function excluirUsuario($id, $redirecionar = true) {
+    try {
+        // Verifica se há processos vinculados ao cliente
+        $sqlVerifica = "SELECT COUNT(*) FROM processos WHERE cliente_id = :id";
+        $stmtVerifica = $this->conexao->prepare($sqlVerifica);
+        $stmtVerifica->bindParam(':id', $id, PDO::PARAM_INT);
+        $stmtVerifica->execute();
+        $total = $stmtVerifica->fetchColumn();
 
-    $sql = "SELECT COUNT(*) as total FROM Agendamentos WHERE cliente_id = :cliente_id";
-    $stmt = $this->conexao->prepare($sql);
-    $stmt->bindParam(':cliente_id', $id, PDO::PARAM_INT);
-    $stmt->execute();
-    $resultado = $stmt->fetch(PDO::FETCH_ASSOC);
+if ($total > 0) {
+            echo "<script>alert('Não é possível excluir o cliente. Existem $total processo(s) vinculados.');</script>";
+            if ($redirecionar) {
+                echo "<script>window.location.href='../Site/usuario.php';</script>";
+            }
+            return;
+        }
 
-    if ($resultado['total'] > 0 && !$confirmar) {
-    echo "<form method='POST'>";
-    echo "<input type='hidden' name='excluir_id' value='{$id}'>";
-    echo "<input type='hidden' name='excluir_usuario' value='1'>";
-    echo "<input type='hidden' name='confirmar_exclusao_total' value='1'>";
-    echo "<button type='submit'>Confirmar exclusão total</button>";
-    echo "</form>";
-    exit;
-}
+        // Excluir cliente
+        $sqlExcluir = "DELETE FROM clientes WHERE cliente_id = :id";
+        $stmtExcluir = $this->conexao->prepare($sqlExcluir);
+        $stmtExcluir->bindParam(':id', $id, PDO::PARAM_INT);
+        $stmtExcluir->execute();
 
-    if ($resultado['total'] > 0 && $confirmar) {
-        $sql = "DELETE FROM Agendamentos WHERE cliente_id = :cliente_id";
-        $stmt = $this->conexao->prepare($sql);
-        $stmt->bindParam(':cliente_id', $id, PDO::PARAM_INT);
-        $stmt->execute();
+        if ($redirecionar) {
+            header('Location: ../Site/usuario.php');
+            exit();
+        }
+
+    } catch (PDOException $e) {
+        echo "<p>Erro ao tentar excluir o cliente: " . $e->getMessage() . "</p>";
     }
-
-    $sql = "DELETE FROM Clientes WHERE cliente_id = :cliente_id";
-    $stmt = $this->conexao->prepare($sql);
-    $stmt->bindParam(':cliente_id', $id, PDO::PARAM_INT);
-    $stmt->execute();
 }
 
 public function buscarId($id)
@@ -67,7 +69,5 @@ public function alterarUsuario($id, $nome, $telefone, $cpf, $email, $endereco, $
     $stmt->bindParam(':estado_civil', $estado_civil);
     $stmt->execute();
 }
-
-
 
 }

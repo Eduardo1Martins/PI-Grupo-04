@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once __DIR__ . ('PHP\processos.php');
+require_once ('../PHP/processos.php');
 
 if (!isset($_SESSION['usuario'])) {
   header("Location: login.html");
@@ -99,7 +99,7 @@ $tiposPermitidos = ['Administrador', 'Advogado'];
         <?php endif; ?>
 
         <li class="nav-item"><a href="financeiro.php" class="nav-link text-white hover:text-gold">Financeiro</a></li>
-        <li class="nav-item"><a href="PHP\logout.php" class="nav-link text-white hover:text-gold">Sair</a></li>
+        <li class="nav-item"><a href="../PHP/logout.php" class="nav-link text-white hover:text-gold">Sair</a></li>
       </ul>
     </div>
   </nav>
